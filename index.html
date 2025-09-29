@@ -12,7 +12,11 @@
 <body>
     <div class="container">
         <header>
-            <h1>Elo Rating Calculator</h1>
+            <h2>Elo Rating Calculator</h1>
+    <!-- Install button for PWA -->
+<button id="installBtn" class="install-btn" hidden>
+    Install as Web App
+</button>
         </header>
 
         <div class="calculator">
@@ -42,7 +46,6 @@
         </div>
 
         <div class="results">
-            <h2>Results</h2>
             <div class="result-item">
                 <span class="result-label">Rating Change:</span>
                 <span class="result-value" id="rating-change">0</span>
@@ -69,10 +72,6 @@
     </footer>
 
 
-    <!-- Install button for PWA -->
-<button id="installBtn" class="install-btn" hidden>
-    Install App
-</button>
     <script src="script.js"></script>
 </body>
 </html>

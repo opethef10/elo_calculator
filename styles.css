@@ -21,6 +21,7 @@ body {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     color: var(--dark);
     line-height: 1.6;
+    font-size: 0.9rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -35,18 +36,15 @@ body {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin: auto;
 }
 
 header {
     text-align: center;
-    margin-bottom: 2rem;
 }
 
-h1 {
+h2 {
     color: var(--primary);
-    margin-bottom: 0.5rem;
-    font-size: 2.5rem;
 }
 
 .subtitle {
@@ -58,16 +56,13 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
+    margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
     .calculator {
         grid-template-columns: 1fr;
     }
-}
-
-.input-group {
-    margin-bottom: 1.5rem;
 }
 
 label {
@@ -191,6 +186,7 @@ footer {
     text-align: center;
     color: var(--gray);
     font-size: 0.9rem;
+    margin-top: 2rem;
 }
 
 .install-btn {
@@ -204,4 +200,18 @@ footer {
 .install-btn:hover {
     background-color: var(--secondary);
     transform: translateY(-2px);
+}
+/* Make the button smaller and reposition on small screens */
+@media (max-width: 768px) {
+  .install-btn {
+      position: inherit;
+      padding: 0.6rem;
+      margin: 0.5rem;
+  }
+}
+
+/* 3. Inputs and buttons */
+input, .score-btn, button {
+    padding: 0.5rem 0.6rem;    /* less padding */
+    font-size: 0.9rem;
 }
