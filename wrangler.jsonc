@@ -1,0 +1,11 @@
+{
+  "name": "elo-calculator",
+  "compatibility_date": "2026-11-16",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "elo.onurarikan.dev", "custom_domain": true }
+  ]
+}
